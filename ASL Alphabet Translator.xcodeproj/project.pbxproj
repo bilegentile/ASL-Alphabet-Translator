@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58C6EFA12BFA19BC00F2D2DA /* ASL_Alphabet_TranslatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6EFA02BFA19BC00F2D2DA /* ASL_Alphabet_TranslatorApp.swift */; };
+		58C6EFA32BFA19BC00F2D2DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6EFA22BFA19BC00F2D2DA /* ContentView.swift */; };
+		58C6EFA52BFA19BE00F2D2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C6EFA42BFA19BE00F2D2DA /* Assets.xcassets */; };
+		58C6EFA82BFA19BE00F2D2DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C6EFA72BFA19BE00F2D2DA /* Preview Assets.xcassets */; };
+		58C6EFB12BFA1AC600F2D2DA /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6EFB02BFA1AC600F2D2DA /* CameraManager.swift */; };
+		58C6EFB32BFA1D1200F2D2DA /* CMSampleBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6EFB22BFA1D1200F2D2DA /* CMSampleBuffer+Extension.swift */; };
+		58C6EFB52BFA1D4400F2D2DA /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6EFB42BFA1D4400F2D2DA /* CIImage+Extension.swift */; };
+		58C6EFB72BFA1E7800F2D2DA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6EFB62BFA1E7800F2D2DA /* ViewModel.swift */; };
+		58C6EFB92BFA1EE700F2D2DA /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6EFB82BFA1EE700F2D2DA /* CameraView.swift */; };
+		58C6EFBD2BFA2E1300F2D2DA /* ASLHandClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 58C6EFBC2BFA2E1300F2D2DA /* ASLHandClassifier.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58C6EF9D2BFA19BC00F2D2DA /* ASL Alphabet Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASL Alphabet Translator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58C6EFA02BFA19BC00F2D2DA /* ASL_Alphabet_TranslatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASL_Alphabet_TranslatorApp.swift; sourceTree = "<group>"; };
+		58C6EFA22BFA19BC00F2D2DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		58C6EFA42BFA19BE00F2D2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58C6EFA72BFA19BE00F2D2DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58C6EFA92BFA19BE00F2D2DA /* ASL_Alphabet_Translator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ASL_Alphabet_Translator.entitlements; sourceTree = "<group>"; };
+		58C6EFAF2BFA1A2700F2D2DA /* ASL-Alphabet-Translator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ASL-Alphabet-Translator-Info.plist"; sourceTree = SOURCE_ROOT; };
+		58C6EFB02BFA1AC600F2D2DA /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		58C6EFB22BFA1D1200F2D2DA /* CMSampleBuffer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMSampleBuffer+Extension.swift"; sourceTree = "<group>"; };
+		58C6EFB42BFA1D4400F2D2DA /* CIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Extension.swift"; sourceTree = "<group>"; };
+		58C6EFB62BFA1E7800F2D2DA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		58C6EFB82BFA1EE700F2D2DA /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		58C6EFBC2BFA2E1300F2D2DA /* ASLHandClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ASLHandClassifier.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58C6EF9A2BFA19BC00F2D2DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58C6EF942BFA19BC00F2D2DA = {
+			isa = PBXGroup;
+			children = (
+				58C6EF9F2BFA19BC00F2D2DA /* ASL Alphabet Translator */,
+				58C6EF9E2BFA19BC00F2D2DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58C6EF9E2BFA19BC00F2D2DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58C6EF9D2BFA19BC00F2D2DA /* ASL Alphabet Translator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58C6EF9F2BFA19BC00F2D2DA /* ASL Alphabet Translator */ = {
+			isa = PBXGroup;
+			children = (
+				58C6EFAF2BFA1A2700F2D2DA /* ASL-Alphabet-Translator-Info.plist */,
+				58C6EFA02BFA19BC00F2D2DA /* ASL_Alphabet_TranslatorApp.swift */,
+				58C6EFA22BFA19BC00F2D2DA /* ContentView.swift */,
+				58C6EFBC2BFA2E1300F2D2DA /* ASLHandClassifier.mlmodel */,
+				58C6EFB02BFA1AC600F2D2DA /* CameraManager.swift */,
+				58C6EFB22BFA1D1200F2D2DA /* CMSampleBuffer+Extension.swift */,
+				58C6EFB42BFA1D4400F2D2DA /* CIImage+Extension.swift */,
+				58C6EFB62BFA1E7800F2D2DA /* ViewModel.swift */,
+				58C6EFB82BFA1EE700F2D2DA /* CameraView.swift */,
+				58C6EFA42BFA19BE00F2D2DA /* Assets.xcassets */,
+				58C6EFA92BFA19BE00F2D2DA /* ASL_Alphabet_Translator.entitlements */,
+				58C6EFA62BFA19BE00F2D2DA /* Preview Content */,
+			);
+			path = "ASL Alphabet Translator";
+			sourceTree = "<group>";
+		};
+		58C6EFA62BFA19BE00F2D2DA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				58C6EFA72BFA19BE00F2D2DA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58C6EF9C2BFA19BC00F2D2DA /* ASL Alphabet Translator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58C6EFAC2BFA19BE00F2D2DA /* Build configuration list for PBXNativeTarget "ASL Alphabet Translator" */;
+			buildPhases = (
+				58C6EF992BFA19BC00F2D2DA /* Sources */,
+				58C6EF9A2BFA19BC00F2D2DA /* Frameworks */,
+				58C6EF9B2BFA19BC00F2D2DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ASL Alphabet Translator";
+			productName = "ASL Alphabet Translator";
+			productReference = 58C6EF9D2BFA19BC00F2D2DA /* ASL Alphabet Translator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58C6EF952BFA19BC00F2D2DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					58C6EF9C2BFA19BC00F2D2DA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 58C6EF982BFA19BC00F2D2DA /* Build configuration list for PBXProject "ASL Alphabet Translator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58C6EF942BFA19BC00F2D2DA;
+			productRefGroup = 58C6EF9E2BFA19BC00F2D2DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58C6EF9C2BFA19BC00F2D2DA /* ASL Alphabet Translator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58C6EF9B2BFA19BC00F2D2DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58C6EFA82BFA19BE00F2D2DA /* Preview Assets.xcassets in Resources */,
+				58C6EFA52BFA19BE00F2D2DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58C6EF992BFA19BC00F2D2DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58C6EFA32BFA19BC00F2D2DA /* ContentView.swift in Sources */,
+				58C6EFBD2BFA2E1300F2D2DA /* ASLHandClassifier.mlmodel in Sources */,
+				58C6EFB92BFA1EE700F2D2DA /* CameraView.swift in Sources */,
+				58C6EFB32BFA1D1200F2D2DA /* CMSampleBuffer+Extension.swift in Sources */,
+				58C6EFB52BFA1D4400F2D2DA /* CIImage+Extension.swift in Sources */,
+				58C6EFB12BFA1AC600F2D2DA /* CameraManager.swift in Sources */,
+				58C6EFB72BFA1E7800F2D2DA /* ViewModel.swift in Sources */,
+				58C6EFA12BFA19BC00F2D2DA /* ASL_Alphabet_TranslatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58C6EFAA2BFA19BE00F2D2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58C6EFAB2BFA19BE00F2D2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		58C6EFAD2BFA19BE00F2D2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ASL Alphabet Translator/ASL_Alphabet_Translator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ASL Alphabet Translator/Preview Content\"";
+				DEVELOPMENT_TEAM = B9N492SM99;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ASL-Alphabet-Translator-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app use the camera for hand detection of the ASL alphabet";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beniaminogentile.ios.ASL-Alphabet-Translator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		58C6EFAE2BFA19BE00F2D2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ASL Alphabet Translator/ASL_Alphabet_Translator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ASL Alphabet Translator/Preview Content\"";
+				DEVELOPMENT_TEAM = B9N492SM99;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ASL-Alphabet-Translator-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app use the camera for hand detection of the ASL alphabet";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beniaminogentile.ios.ASL-Alphabet-Translator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58C6EF982BFA19BC00F2D2DA /* Build configuration list for PBXProject "ASL Alphabet Translator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58C6EFAA2BFA19BE00F2D2DA /* Debug */,
+				58C6EFAB2BFA19BE00F2D2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58C6EFAC2BFA19BE00F2D2DA /* Build configuration list for PBXNativeTarget "ASL Alphabet Translator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58C6EFAD2BFA19BE00F2D2DA /* Debug */,
+				58C6EFAE2BFA19BE00F2D2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58C6EF952BFA19BC00F2D2DA /* Project object */;
+}
