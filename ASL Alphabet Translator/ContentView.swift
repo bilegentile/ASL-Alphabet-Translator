@@ -14,10 +14,16 @@ struct ContentView: View {
     
     var body: some View {
         CameraView(image: $viewModel.currentFrame)
-        Text(handPoseClassifier.handPrediction ?? "Unknown")
-            .padding()
-        Text(handPoseClassifier.predictionResult ?? "Unknown")
-            .padding()
+        HStack {
+            Text("Letter:")
+            Text(handPoseClassifier.handPrediction ?? "Unknown")
+                .padding()
+        }
+        HStack {
+            Text("Confidence:")
+            Text(handPoseClassifier.predictionResult ?? "Unknown")
+                .padding()
+        }
         
         if let errorMessage = handPoseClassifier.errorMessage {
             Text(errorMessage)
