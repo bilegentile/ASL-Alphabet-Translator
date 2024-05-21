@@ -25,3 +25,9 @@ And finally, I used the Vision framework to connect the camera and model and dis
 CreateML not only can make models on poses, but also on actions. So, with a dataset of videos is possible to implement actual words in the application, this would be a starting point for a real ASL translator!
 
 The UX/UI is just a test for now, in the future it will be implemented a more user-friendly interface.
+
+
+## Acknowledgements
+
+ - [ASL Alphabet dataset from Kaggle](https://www.kaggle.com/datasets/grassknoted/asl-alphabet)
+
